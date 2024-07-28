@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+
+  mysql:
+    image: mysql:8.0.13
+    ports:
+      - 3307:3306
+
+
+volumes:
+  bm-db-data:
+    driver: local
+  hd-db2-data:
+    driver: local
+
+
+
